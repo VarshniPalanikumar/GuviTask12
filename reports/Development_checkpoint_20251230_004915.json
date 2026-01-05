@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "Test.Test_Locators",
+          "name": "test_locatorsTypes",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: TypeError: presence_of_element_located() takes 1 positional argument but 2 were given\nDetails: start_browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"882daa92da9c81eb3d770b88851737e1\")>\n\n    def test_locatorsTypes(start_browser):\n        driver = start_browser\n        # finding the first underlined element Courses\n    \n        first_element = WebDriverWait(driver, 10).until(\n            EC.presence_of_element_located((By.XPATH, \"//a[normalize-space()='Courses']\"))\n        )\n        #print(\"Element text is:\", first_element.text)\n        print(first_element.get_attribute(\"textContent\"))\n    \n>       parent_of_first_element = WebDriverWait(driver,10).until(EC.presence_of_element_located(By.XPATH,\"//a[normalize-space()='Courses']/parent::*\"))\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       TypeError: presence_of_element_located() takes 1 positional argument but 2 were given\n\nTest\\Test_Locators.py:18: TypeError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "30 Dec 2025, 00:49",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}
